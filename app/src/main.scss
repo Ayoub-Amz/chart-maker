@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+body{
+    font-family: 'Cabin', sans-serif;
+    background-color: bisque;
+    .container{
+        @media (max-width: 768px){
+            width: 80%;
+        }
+        width: 50%;
+        margin: 20px auto;
+        .chartContainer{
+            box-shadow: 0 0 5px #CCC inset; 
+            margin: 10px 0px;
+            width: 100%;
+            background-color: #FFF;
+                canvas{ 
+                    width: 100%;
+                }
+            }
+        .options{
+            width: 100%;
+            margin: 20px auto;
+            p{
+                text-decoration: underline;
+                font-weight: bold;
+                margin-bottom: 0px;
+            }
+            ul{
+                margin-top: 0px;
+            }
+            .set{
+                margin: 10px 0px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                select{
+                    width: 25%;
+                    padding: 5px;
+                }
+                #name,input{
+                    width: 35%; 
+                    padding: 5px;
+                    outline: none;
+                }
+                #name{
+                    width: 65%;
+                }
+                input[type="color"]{
+                    width: 10%;
+                    border: none;
+                    outline: none;
+                    &::-webkit-color-swatch-wrapper {
+                        padding: 0;
+                        }
+                    &::-webkit-color-swatch {
+                        border: none;
+                        }
+                    }
+                button{
+                    width: 30%;
+                    padding:  5px;
+                }
+            } 
+        } 
+    }
+}
+
+
